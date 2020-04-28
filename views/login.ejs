@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<form action="/login" method="POST">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+      
+    <br /><br /><h1>Account </h1><br /><br />
+    <form>
+        <br /><br /><label for="uname_val"> Username</label>
+        <input type="text" id="uname_val" name="uname_val" required /><br /><br />
+        <label for="pass_val">Password</label>
+        <input type="password"  id="pass_val" name="pass_val" required /><br /><br />
+        <% if (messages.error) { %>
+            <%= messages.error %>
+          <% } %><br/><br/>
+        <!-- <button type="submit" class="btn btn-primary"id="submitForm">Log in 1</button> -->
+        <button type="submit" class="btn btn-primary">Log in </button>
+        <a class="btn btn-primary" href="/signup">Signup <a/>
+        
+    </form>
+</body>
+<!-- <script type = " text/javascript" src ="login.js">
+</script> -->
+</form>
+</html>
