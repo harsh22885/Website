@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <form> 
+        <input type="text" id="firstName" placeholder="firstName"> </input>
+        <input type="text" id="lastName" placeholder="lastName"/>
+        <button type="submit" id="submitForm">Submit</button>
+    </form>
+</body>
+<script>
+const button = document.getElementById('submitForm'); 
+    button.addEventListener('click', (event) => {
+        event.preventDefault()
+        const firstName =  document.getElementById('firstName'); 
+        const lastName =  document.getElementById('lastName'); 
+        const data = {'firstName': firstName.value, 'lastName': lastName.value}
+        const url = "http://localhost:8080/user"
+
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(data), 
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((data) => {
+            console.log(`Done sending data and resp is ${data}`)
+            document.getElementById('firstName').value = ''
+            document.getElementById('lastName').value = ''
+        })
+    })
+</script>
+</html>
+
+

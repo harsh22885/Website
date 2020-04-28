@@ -1,0 +1,38 @@
+﻿body {
+    
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+    text-align:center;
+    
+}
+h1 {
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav {
+  
+    width:750px;
+    margin:0 auto;
+   
+    }
+
+    
+nav a {
+    float:left;
+    text-align:center;
+    width:150px;
+    font-style : italic ;      
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+ul a {
+    margin: 0;
+    float: right;
+}
