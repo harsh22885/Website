@@ -55,86 +55,16 @@
     </div>
     </nav>
     <div></div>
-    </div><meta charset="utf-8">
-    <title>Account</title>
-<body>
-<br><br>
-<h1>Application Form</h1>
-   
-<br><br>
-<form id="login">
-<input type="text" placeholder="First Name" class="radius1" id="firstname"> 
-<input type="text" placeholder="Surname" class="radius1" id="surname"><br><br>
-Date of Birth
-<input type="date" id="birthday">
-<br><br>
-<input type="text" placeholder="Nationality" value="" class="radius" id="nationality"><br><br>
-Gender:
-<input type="radio" name="gender" value="Male">Male
-<input type="radio" name="gender" value="Female">Female<br><br>
-<div id="result"></div>
-<input type="text" placeholder="Age" value="" class="radius" id="age"><br><br>
-<textarea type="text" placeholder=" Address " value="" rows="4" cols="23" id="address"></textarea><br><br>
-<input type="text" placeholder="Mobile number " class="radius" id="mobile"><br><br>
-<input type="text" placeholder="E-mail address" value="" class="radius" id="email"><br><br>
-Do you have a disability ? <br><br>
-<input type="radio" name="disability" value="Yes">Yes<br>    
-<input type="radio" name="disability" value="No">No<br><br>
-Intake<br><br>
-<input type="radio" name="intake" value="Jan 2020">Jan 2020<br>
-<input type="radio" name="intake" value="May 2020">May 2020<br> 
-<input type="radio" name="intake" value="Sept 2020">September 2020<br><br>
-Course intending to apply for :
-<select class="radius" id="courses">
-    <option disabled="" selected="" value="">Select Course</option>
-    <option value="B.Tech">B.Tech</option>
-    <option value="B.Sc">B.Sc</option>
-    <option value="B.Arch">B.Arch</option>
-</select><br><br>
-Have you previously applied or studied at the UK University ? <br><br>
-<input type="radio" name="university" value="Yes">Yes<br>    
-<input type="radio" name="university" value="No">No<br> 
-<!-- If Yes , which and when ?
-<input type="text" placeholder="" value="" class="radius" /><br/><br/> -->
-How do you intend to fund your studies ? <br><br>
-<input type="radio" name="fund" value="Loan">Loan<br> 
-<input type="radio" name="fund" value="Self Sponsored">Self Sponsored<br><br>
-Education <br><br>
-<input type="text" placeholder="Institution" value="" class="radius" id="college"><br><br>
-<input type="text" placeholder="Cowntry" value="" class="radius" id="country"><br><br> 
-<input type="text" placeholder="Title of Qualification" value="" class="radius" id="title"><br><br> 
-<input type="text" placeholder="Grade Awarded or Pending" value="" class="radius" id="grade"><br><br>        
-Start Date
-<input type="date" id="startday">
-<br><br>
-End Date
-<input type="date" id="endday">
-<br><br>
-English Language Proficiency<br><br>
-Have you took any English Language Test ? <br><br>
-<input type="radio" name="test" value="Yes">Yes<br>    
-<input type="radio" name="test" value="No">No<br><br>
-<!-- If Yes , which and when ?
-<input type="text" placeholder="" value="" class="radius" /><br/><br/> -->
-Work Experience<br><br> 
-Do you have a work experience ?<br><br>
-<input type="radio" name="work" value="Yes">Yes<br>    
-<input type="radio" name="work" value="No">No<br><br>
-If Yes , <br>
-<input type="text" placeholder="Company" class="radius" id="company"><br><br>
-<input type="text" placeholder="Job Title" class="radius" id="job"><br><br>
-<input type="text" placeholder="Responsbilities" class="radius" id="duties"><br><br>
-Disclaimer &amp; Singnature<br><br>
-I certify that my answer are true and complete to the best of my knowledge<br>
-<input type="checkbox" class="checks" id="check"> <br><br>
-<button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
-</form>   
-<h3 id="result"></h3> 
-<br><br>
-</body>
-<script type=" text/javascript" src="register.js">
-</script>
-
+    </div>
+    <div class="login-dark">
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="#" class="forgot" style="height:41px;">Forgot your email or password?</a><strong style="margin:98px;">OR</strong><a class="btn btn-primary btn-block" role="button"
+                href="./signup.html">Sign up</a></form>
+    </div>
     <div class="footer-dark" style="padding:0px;"></div>
     <div class="footer-dark">
         <footer>

@@ -51,90 +51,90 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="./register.html">Register</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="international.html">International</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About us</a></li>
-                    </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="./login">Log In<br></a></span></div>
+                    </ul><form action="/logout?_method=DELETE" method="POST">
+                    <span class="navbar-text actions"> <button class="btn btn-light action-button" role="button" type="submit" >Log out</button></span></div>
     </div>
     </nav>
     <div></div>
-    </div><meta charset="utf-8">
-    <title>Account</title>
-<body>
-<br><br>
-<h1>Application Form</h1>
-   
-<br><br>
-<form id="login">
-<input type="text" placeholder="First Name" class="radius1" id="firstname"> 
-<input type="text" placeholder="Surname" class="radius1" id="surname"><br><br>
-Date of Birth
-<input type="date" id="birthday">
-<br><br>
-<input type="text" placeholder="Nationality" value="" class="radius" id="nationality"><br><br>
-Gender:
-<input type="radio" name="gender" value="Male">Male
-<input type="radio" name="gender" value="Female">Female<br><br>
-<div id="result"></div>
-<input type="text" placeholder="Age" value="" class="radius" id="age"><br><br>
-<textarea type="text" placeholder=" Address " value="" rows="4" cols="23" id="address"></textarea><br><br>
-<input type="text" placeholder="Mobile number " class="radius" id="mobile"><br><br>
-<input type="text" placeholder="E-mail address" value="" class="radius" id="email"><br><br>
-Do you have a disability ? <br><br>
-<input type="radio" name="disability" value="Yes">Yes<br>    
-<input type="radio" name="disability" value="No">No<br><br>
-Intake<br><br>
-<input type="radio" name="intake" value="Jan 2020">Jan 2020<br>
-<input type="radio" name="intake" value="May 2020">May 2020<br> 
-<input type="radio" name="intake" value="Sept 2020">September 2020<br><br>
-Course intending to apply for :
-<select class="radius" id="courses">
-    <option disabled="" selected="" value="">Select Course</option>
-    <option value="B.Tech">B.Tech</option>
-    <option value="B.Sc">B.Sc</option>
-    <option value="B.Arch">B.Arch</option>
-</select><br><br>
-Have you previously applied or studied at the UK University ? <br><br>
-<input type="radio" name="university" value="Yes">Yes<br>    
-<input type="radio" name="university" value="No">No<br> 
-<!-- If Yes , which and when ?
-<input type="text" placeholder="" value="" class="radius" /><br/><br/> -->
-How do you intend to fund your studies ? <br><br>
-<input type="radio" name="fund" value="Loan">Loan<br> 
-<input type="radio" name="fund" value="Self Sponsored">Self Sponsored<br><br>
-Education <br><br>
-<input type="text" placeholder="Institution" value="" class="radius" id="college"><br><br>
-<input type="text" placeholder="Cowntry" value="" class="radius" id="country"><br><br> 
-<input type="text" placeholder="Title of Qualification" value="" class="radius" id="title"><br><br> 
-<input type="text" placeholder="Grade Awarded or Pending" value="" class="radius" id="grade"><br><br>        
-Start Date
-<input type="date" id="startday">
-<br><br>
-End Date
-<input type="date" id="endday">
-<br><br>
-English Language Proficiency<br><br>
-Have you took any English Language Test ? <br><br>
-<input type="radio" name="test" value="Yes">Yes<br>    
-<input type="radio" name="test" value="No">No<br><br>
-<!-- If Yes , which and when ?
-<input type="text" placeholder="" value="" class="radius" /><br/><br/> -->
-Work Experience<br><br> 
-Do you have a work experience ?<br><br>
-<input type="radio" name="work" value="Yes">Yes<br>    
-<input type="radio" name="work" value="No">No<br><br>
-If Yes , <br>
-<input type="text" placeholder="Company" class="radius" id="company"><br><br>
-<input type="text" placeholder="Job Title" class="radius" id="job"><br><br>
-<input type="text" placeholder="Responsbilities" class="radius" id="duties"><br><br>
-Disclaimer &amp; Singnature<br><br>
-I certify that my answer are true and complete to the best of my knowledge<br>
-<input type="checkbox" class="checks" id="check"> <br><br>
-<button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
-</form>   
-<h3 id="result"></h3> 
-<br><br>
-</body>
-<script type=" text/javascript" src="register.js">
-</script>
-
+    </div>
+    <div class="bg-gray padding-50" style="background-image:url(&quot;assets/img/photo-1470219556762-1771e7f9427d.jpg&quot;);">
+        <div class="container" id="system-status">
+            <h1 class="text-center">Status</h1>
+            <div class="visible system-status" style="background-color:rgba(0,0,0,0.2);">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <h2>Overview </h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Registration</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Find a course and your universities</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Engllish Language Test</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Personal Statement</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Offer Letter and Cas</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visa Process</td>
+                                        <td><i class="fa fa-check"></i>Done</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-8">
+                        <h2>Latest Updates <small>(3) </small></h2>
+                        <div class="card">
+                            <div class="card-body" style="background-color:rgba(0,0,0,0.1);">
+                                <h3><i class="fa fa-search-plus"></i>&nbsp;Application </h3>
+                                <p>We have received reports of degraded performance in one or more areas of the application and are working quickly to resolve the issue. Thank you for your patience.&nbsp; </p>
+                                <div class="latest-update-timestamp"><span><strong>February 3, 2017 @ 9:35 PM MST</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body sr-only">
+                                <h3><i class="fa fa-check"></i>Web Server</h3>
+                                <div class="latest-update-timestamp"><span><strong>February 3, 2017 @ 9:35 PM MST</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color:rgba(0,0,0,0.1);">
+                                <h3><i class="icon ion-filing"></i>&nbsp;Documents</h3>
+                                <p>Issues previously reported have been resolved. Datacenter should be available shortly.</p>
+                                <div class="latest-update-timestamp"><span><strong>February 3, 2017 @ 9:45 PM MST</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color:rgba(0,0,0,0.1);">
+                                <h3><i class="fa fa-info"></i>&nbsp;Additional Information</h3>
+                                <p>System unavailable. Technicians have been notified and are working quickly to resolve the issue. Thank you for your patience.</p>
+                                <div class="latest-update-timestamp"><span><strong>February 3, 2017 @ 9:49 PM MST</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body sr-only">
+                                <h3><i class="fa fa-check"></i>Network</h3>
+                                <div class="latest-update-timestamp"><span><strong>February 3, 2017 @ 9:35 PM MST</strong></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer-dark" style="padding:0px;"></div>
     <div class="footer-dark">
         <footer>
@@ -173,5 +173,5 @@ I certify that my answer are true and complete to the best of my knowledge<br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Simple-Slider1.js"></script>
 </body>
-
+</form>
 </html>

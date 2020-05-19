@@ -20,6 +20,7 @@ const button = document.getElementById('submitForm');
         const address =  document.getElementById('address');
         const  mobile=  document.getElementById('mobile');
         const  email =  document.getElementById('email');
+
         var disability  = ''
             var ele = document.getElementsByName('disability'); 
             for(i = 0; i < ele.length; i++) { 
@@ -103,7 +104,7 @@ const button = document.getElementById('submitForm');
                       'job': job.value,
                       'duties': duties .value
                      }
-        const url = "http://localhost:8080/register"
+        const url = "/register"
 
         fetch(url, {
             method: 'POST',

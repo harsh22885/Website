@@ -7,7 +7,7 @@ const button = document.getElementById('signup');
         const email =  document.getElementById('email'); 
         const password =  document.getElementById('password'); 
         const data = {'name': name.value,'email': email.value, 'password': password.value}
-        const url = "http://localhost:8080/signup.html"
+        const url = "/signup.html"
 
         fetch(url, {
             method: 'POST',
