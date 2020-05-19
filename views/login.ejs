@@ -1,34 +1,111 @@
-﻿<!DOCTYPE html>
-<form action="/login" method="POST">
+<!DOCTYPE html>
+<html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Account</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-v2-Modal--Full-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Process-Steps.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/System-Status.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Team-Grid.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
 </head>
 
-<link rel="stylesheet" href="style.css">
-
 <body>
-
-      
-    <br /><br /><h1>Account </h1><br /><br />
-    <form>
-        <br /><br /><label for="uname_val"> Username</label>
-        <input type="text" id="uname_val" name="uname_val" required /><br /><br />
-        <label for="pass_val">Password</label>
-        <input type="password"  id="pass_val" name="pass_val" required /><br /><br />
-        <% if (messages.error) { %>
-            <%= messages.error %>
-          <% } %><br/><br/>
-        <!-- <button type="submit" class="btn btn-primary"id="submitForm">Log in 1</button> -->
-        <button type="submit" class="btn btn-primary">Log in </button>
-        <a class="btn btn-primary" href="/signup">Signup <a/>
-        
-    </form>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="height:106px;">
+            <div class="container"><a class="navbar-brand" href="homepage.html"><img src="assets/img/3dbcd1ab-cd1c-4aa9-b39e-e5bb0adde3f8_200x200.png" style="height:122px;width:186px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="./homepage.html">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="students.html">Students</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="./register.html">Register</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="international.html">International</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About us</a></li>
+                    </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="./login">Log In<br></a></span></div>
+    </div>
+    </nav>
+    <div></div>
+    </div>
+    <div class="login-clean">
+        <form action="/login" method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+            <div class="form-group"><input class="form-control" type="email" name="username" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+            <% if (messages.error) { %>
+                <%= messages.error %>
+              <% } %>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button>
+            </div><a href="#" class="forgot" style="height:29px;">Forgot your email or password?</a><strong style="margin:98px;">OR</strong>
+            <a class="btn btn-primary btn-block" role="button" href="./signup">Sign Up</a></form>
+    </div>
+    <div class="footer-dark" style="padding:0px;"></div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3><strong>ZR City Investment</strong><br></h3>
+                        <p>ZR City Investment provides education support services which are nowadays essential for the students . It is a private company who also deals with the planning and process of the promotional sales for non-specialised stores .&nbsp;<br></p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">ZR City Investment&nbsp;© 2020<br></p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider1.js"></script>
 </body>
-<!-- <script type = " text/javascript" src ="login.js">
-</script> -->
-</form>
+
 </html>
